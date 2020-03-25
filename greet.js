@@ -1,4 +1,4 @@
-function greet(kagiso) {
-  return "Hello, " + kagiso
+function greet(Kagiso) {
+  return "Hello, " + Kagiso
   
  }
