@@ -1,14 +1,20 @@
-describe('regCheck is working fine' , function(){
-    it('should return true for L' , function(){
-        assert.equal(0, regCheck ("L"))
+describe('regCheck is working fine', function (regNumber, province) {
+
+
+    it('should return true for CY', function () {
+        var province = "CY";
+        var regNumber = "DV 23 LP CY"
+        assert.equal(true, regCheck(regNumber, province))
     });
-    it('should return true for  MP' , function(){
-        assert.equal(0, regCheck ("MP"))
+    it('should return false for ND', function () {
+        var province = "CY"
+        var regNumber = "DV 23 LP ND"
+        assert.equal(false, regCheck(regNumber, province))
     });
-    it('should return true for  EC,' , function(){
-        assert.equal(0, regCheck ("EC"))
+    it('should return false for  MP', function () {
+        var province = "CY"
+        var regNumber = "DV 23 LP MP"
+        assert.equal(false, regCheck(regNumber, province))
     });
-    it('should return true for GP' , function(){
-        assert.equal(0, regCheck ("GP"))
-    });
+ 
 });

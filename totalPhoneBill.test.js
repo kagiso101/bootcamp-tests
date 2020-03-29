@@ -1,6 +1,10 @@
 describe('totalPhoneBill is working fine' , function(){
-    it('should return totalPhoneBill' , function(){
-        assert.equal("R0.00", totalPhoneBill("R + total.toFixed(2)"))
+    it('should return totalPhoneBill for an sms' , function(){
+        var sms = "sms";
+        assert.equal(totalPhoneBill("sms"), 'R'+0.65);
     });
-
+    it('should return totalPhoneBill for 1 call' , function(){
+        var call = "call";
+        assert.equal(totalPhoneBill("call"), "R"+2.75);
+    });
 });
