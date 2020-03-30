@@ -17,7 +17,7 @@ describe('findItemsOver20', function () {
         ];
         assert.deepEqual([{ name: 'pears', qty: 37 }], findItemsOver20(item));
     });
-    it('should find no quantity over 20', function () {
+    it('should find no quantity over 40', function () {
         var item = [
             { name: 'apples', qty: 10 },
             { name: 'pears', qty: 37 },
