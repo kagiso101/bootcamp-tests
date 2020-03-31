@@ -8,7 +8,7 @@ function mostProfitableDepartment(list){
        map[myObj] += list[i].sales;
      }
        var total = 0; 
-       var dept = "";
+       var dept = "hardware";
        for(var i in map)
        {
          if(map[i]>total)
@@ -19,3 +19,4 @@ function mostProfitableDepartment(list){
        }
        return dept;
    }
+   
